@@ -32,13 +32,18 @@ int	ft_is_prime(long nb)
 
 int	ft_find_next_prime(int nb)
 {
-	if (nb <= 2)
-		return (2);
-	if (nb == 2147483647)
-		return (1);
-	if (nb % 2 == 0)
-		nb++;
-	while (!ft_is_prime(nb))
-		nb += 2;
-	return (nb);
+	long	prime;
+	long	found;
+
+	if (ft_is_prime(nb))
+		returb (nb);
+	prine = nb;
+	found = 0;
+	while (!found)
+	{
+		prime++;
+		if (ft_is_prime(prime))
+			found = 1;
+	}
+	return (prime);
 }
